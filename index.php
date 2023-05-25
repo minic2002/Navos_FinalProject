@@ -1,27 +1,35 @@
 <!DOCTYPE html>
 <html>
-<head>
-    <title>Student Management System - Login</title>
-    <!-- Add Bootstrap CSS -->
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
-</head>
-<body>
-    <div class="container">
-        <h1 class="mt-4">Student Management System - Login</h1>
-        <form method="post" action="login.php">
-            <div class="form-group">
-                <label for="username">Username:</label>
-                <input type="text" class="form-control" id="username" name="username" required>
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="shortcut icon" href="static/image/student-icon.png" type="image/x-icon">
+        <link rel="stylesheet" href="static/bootstrap/css/bootstrap.min.css">
+        <link rel="stylesheet" href="static/custom-css/navos_finalproject.css">
+        <title>Student Management System | Login</title>
+    </head>
+    <body>
+        <div class="container center">
+            <div class="card card-size">
+                <div class="card-body">
+                    <h2 class="card-title text-center">LOGIN</h2>
+                    <form method="post" action="action/login.php">
+                        <div class="form-group">
+                            <label for="username">Username</label>
+                            <input type="text" class="form-control" id="username" name="username" placeholder="Username" onkeypress="return event.charCode != 32" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="password">Password</label>
+                            <input type="password" class="form-control" id="password" name="password" placeholder="Password" onkeypress="return event.charCode != 32" required>
+                        </div>
+                        <div class="form-group text-right">
+                            <input type="submit" class="btn btn-primary" value="Login">
+                        </div>
+                    </form>
+                </div>
             </div>
-            <div class="form-group">
-                <label for="password">Password:</label>
-                <input type="password" class="form-control" id="password" name="password" required>
-            </div>
-            <input type="submit" class="btn btn-primary" value="Login">
-        </form>
-    </div>
-
-    <!-- Add Bootstrap JS -->
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
-</body>
+        </div>
+        <script src="static/bootstrap/js/bootstrap.min.js"></script>
+    </body>
 </html>
