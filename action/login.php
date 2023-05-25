@@ -1,6 +1,11 @@
 <?php
 session_start();
 
+if (isset($_SESSION['username'])) {
+    header("Location: ../dashboard");
+    exit();
+}
+
 include "userdb.php";
 
 // Retrieve the login form data
